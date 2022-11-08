@@ -1,10 +1,20 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #14213D;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Cabin', sans-serif; */
+    /* font-family: 'Varela Round', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.02rem;
+    font-weight: 300;
+    color: #E5E5E5;
 }
 
 /* Style the 'Skip Content' button */
@@ -27,10 +37,10 @@ body {
     top: 20px;
 }
 
-:focus {
+/* :focus {
     border: solid;
     border-width: 2px;
-}
+} */
 
 @media screen and (prefers-reduced-motion: reduce) {
     html {
@@ -54,32 +64,57 @@ body {
 /* Nav Bar Styling */
 
 nav {
-    background-color: #FCA311;
-    padding: 25px 0;
+    /* background-color: #28427B; */
+    background-color: black;
+    padding: 22px 0;
     text-align: right;
 }
 
 nav a:hover, a:focus {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    /* background-color: #333333; */
+    padding-bottom: 5px;
+    border-bottom: 2px #E5E5E5 solid;
 }
 
 nav li {
     display: inline;
-    padding-right: 20px;
+    padding: 20px;
+}
+
+nav ul:last-child {
+    margin-right: 10px;
 }
 
 nav a {
-    color: black;
+    /* color: #E5E5E5; */
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
 
 .currentPage {
-    color: #FCA311;
-    border: 2px solid black;
-    padding: 7px;
+    /* color: #FCA311; */
+    color: #E5E5E5;
+    /* padding: 7px; */
     /* border-radius: 5px; */
-    background-color: #14213D;
+    /* background-color: #14213D; */
+    /* background-color: #E5E5E5; */
+    /* border-bottom: 3px #E5E5E5 solid; */
+    background-color: #333333;
+
+}
+
+.title {
+    color: #FCA311;
+    font-size: 82px;
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 300;
+    font-family: 'Cabin', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+
 }
 
 /* Tablet Display */
