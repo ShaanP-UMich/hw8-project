@@ -131,6 +131,10 @@ nav a:hover {
 
 /* Main Content Styling */
 
+main {
+    margin-bottom: 5rem;
+}
+
 .title {
     display: block;
     color: #D90368;
@@ -172,6 +176,28 @@ nav a:hover {
 
 .image-group p {
     text-align: center;
+}
+
+/* Footer Styling */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 100px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    color: #E5E5E5;
+}
+
+.footer-links a, p {
+    padding: 10px;
+    text-decoration: none;
+    color: #E5E5E5;
 }
 
 /* Tablet Display */
