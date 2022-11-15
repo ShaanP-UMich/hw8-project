@@ -162,9 +162,6 @@ main {
 }
 
 .gallery img {
-    width: 180px;
-    height: auto;
-    padding: 20px;
     /* border: 3px solid #FFF; */
 }
 
@@ -172,10 +169,23 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 220px;
+}
+
+.image-group img {
+    padding: 20px;
+    width: 180px;
+    height: auto;
 }
 
 .image-group p {
     text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 /* Footer Styling */
@@ -194,7 +204,7 @@ footer {
     color: #E5E5E5;
 }
 
-.footer-links a, p {
+.footer-links a, .footer-links p {
     padding: 10px;
     text-decoration: none;
     color: #E5E5E5;
@@ -213,6 +223,10 @@ footer {
 
     .gallery {
         flex-direction: row;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
